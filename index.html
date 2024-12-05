@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navigation Bar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+      .navbar-custom{
+        background-color: black;
+      }
+      .navbar-custom, .navbar-brand,
+      .navbar-custom, .nav-link{
+        color: white;
+      }
+      .navbar-custom, .navbar-link:hover{
+        color: gray;
+      }
+      body{
+    background-image:url(images.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .container{
+    background-color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+ }
+ textarea{
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+ }
+  </style> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand">OBMC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="False" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                       <a class="nav-link" href="https://obmontessori.edu.ph/">HOME</a> 
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="https://obmontessori.edu.ph/advancing-the-montessori-way">ABOUT</a> 
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="https://obmontessori.edu.ph/contact-us">CONTACT</a> 
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+  <h1 class="mb-4 text-center">Robotics Club Registration Form</h1>
+  <div>
+    <form>
+      <div class="row md-3">
+        <div class="col-md-6 col-demo">
+          <label for="exampleName">Name</label>
+        <input type="name" class="form-control" id="exampleName" fdprocessedid="pezof">
+        </div>
+        <div class="col-md-6 col-demo">
+          <label for="exampleAge">Age</label>
+        <input type="age" class="form-control" id="exampleAge" fdprocessedid="riqnk8">
+        </div>
+      </div>
+      <div class="row md-3">
+        <div class="col-md-6 col-demo">
+           <label for="exampleEmail">Email Address</label>
+        <input type="email" class="form-control" id="exampleEmail" fdprocessedid="lvxhl9">
+        </div>
+        <div class="col-md-6 col-demo">
+          <label for="examplenumber">Phone Number</label>
+        <input type="phonenumber" class="form-control" id="examplenumber" fdprocessedid="8lxn2v">
+        </div>
+      </div>
+
+      <div class="form-check mb-3"> <br>
+        <p>Preferred Robotics Topics</p>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+          Programming
+        </label> <br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+          Electronics
+        </label> <br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+          Mechanical Design
+        </label> <br>
+
+         <br><p>Robotics Experience Level</p>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+          Beginner 
+        </label> <br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+          Intermediate 
+        </label> <br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+          Advanced
+        </label><br>
+
+        <br><label for="select">Preffered Robotics Project</label><br>
+        <select id="select" name="select" fdprocessedid="vwgjnm">
+        <option value="Choose a project...">Choose a project...</option>
+        <option value="Bomb Detection Robot">Bomb Detection Robot</option>
+        <option value="Brain Controlled Robot">Brain Controlled Robot</option>
+        <option value="Soccer Robot">Soccer Robot</option>
+        <option value="Voice Controlled Robot">Voice Controlled Robot</option>
+        </select><br>
+
+        <label>Statement of Interest</label>
+        <textarea id="textarea" name="textarea" rows="3"></textarea>
+
+        <br><button type="submit" class="btn btn-secondary" fdprocessedid="4ndbyx">Submit</button>
+
+
+
+      </div>
+    </form>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
